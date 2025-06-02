@@ -1,6 +1,7 @@
 package utils.appium;
 
 import io.appium.java_client.AppiumBy;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,17 +12,17 @@ import java.time.Duration;
 public class Waits {
 
 
-    public static void waitForElementToBeVisible(AppiumBy locator, Duration duration) {
+    public static void waitForElementToBeVisible(By locator, Duration duration) {
         WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), duration);
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    public static void waitForElementToBeClickable(AppiumBy locator, Duration duration) {
+    public static void waitForElementToBeClickable(By locator, Duration duration) {
         WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), duration);
         wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-    public static void waitForElementToBeInvisible(AppiumBy locator, Duration duration) {
+    public static void waitForElementToBeInvisible(By locator, Duration duration) {
         WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), duration);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
     }
@@ -32,13 +33,13 @@ public class Waits {
     }
 
 
-    public static void waitForElementToBeVisible(AppiumBy locator) {
+    public static void waitForElementToBeVisible(By locator) {
         waitForElementToBeVisible(locator, Duration.ofSeconds(Long.parseLong(System.getProperty("DefaultWaitTime", "5"))));
     }
-    public static void waitForElementToBeClickable(AppiumBy locator) {
+    public static void waitForElementToBeClickable(By locator) {
         waitForElementToBeClickable(locator, Duration.ofSeconds(Long.parseLong(System.getProperty("DefaultWaitTime", "5"))));
     }
-    public static void waitForElementToBeInvisible(AppiumBy locator) {
+    public static void waitForElementToBeInvisible(By locator) {
         waitForElementToBeInvisible(locator, Duration.ofSeconds(Long.parseLong(System.getProperty("DefaultWaitTime", "5"))));
     }
     public static void waiForElementToBeStale(WebElement element) {

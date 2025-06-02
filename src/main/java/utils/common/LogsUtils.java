@@ -3,20 +3,24 @@ package utils.common;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public  class LogsUtils {
+   //    https://appium.readthedocs.io/en/latest/en/commands/session/logs/get-log/
 
     public static final String LOG_FILE_PATH = "test_outputs/logs";
-    private static final ThreadLocal<StringBuilder> threadLogs = ThreadLocal.withInitial(StringBuilder::new);
+    private static final List<String> logs= Collections.synchronizedList(new ArrayList<>());
     private LogsUtils() {
     }
-
 
     private static Logger logger() {
         return LogManager.getLogger(Thread.currentThread().getStackTrace()[3].getClassName());
     }
 
     private static void record(String message) {
-        threadLogs.get().append(message).append("\n");
+        logs.add(message);
     }
 
     public static void trace(String... messages) {
@@ -49,12 +53,11 @@ public  class LogsUtils {
         record("[ERROR] - ["+DateTime.getDateTime()+"] - " + logMessage);
     }
 
-
     public static String getCapturedLogs() {
-        return threadLogs.get().toString();
+        return String.join("\n", logs);
     }
 
     public static void clearCapturedLogs() {
-        threadLogs.remove();
+        logs.clear();
     }
 }

@@ -23,8 +23,12 @@ public class AllureUtils {
     public static void attachLogs(ITestResult result) {
         String testName= result.getMethod().getMethodName();
         String logs = LogsUtils.getCapturedLogs();
+        LogsUtils.info("Attaching logs for test: " + testName);
         if (!logs.isEmpty()) {
             Allure.addAttachment(testName + " Logs", logs);
+            LogsUtils.info("Logs attached successfully for test: " + testName);
+        }else {
+            LogsUtils.error("No logs captured for test: " + testName);
         }
         LogsUtils.clearCapturedLogs();
     }
@@ -82,7 +86,7 @@ public class AllureUtils {
     public static void setEnvironmentVariables () {
         try {
             Files.write(Paths.get(Allure_Results_Path+"/environment.properties"),
-                    Arrays.asList("Environment="+System.getProperty("environmentType"),"Title="+System.getProperty("appTitle"),"Url="+System.getProperty("url")));
+                    Arrays.asList("Environment="+System.getProperty("environmentType"),"Title="+System.getProperty("appTitle")));
         } catch (Exception e) {
             LogsUtils.error("Failed to set environment properties: " + e.getMessage());
         }

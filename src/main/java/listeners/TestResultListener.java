@@ -6,7 +6,11 @@ import org.testng.ITestResult;
 import utils.common.LogsUtils;
 import utils.common.PropertiesUtils;
 
+
+
+
 public class TestResultListener implements ITestListener {
+
     @Override
     public void onTestStart(ITestResult result) {
         LogsUtils.info("Test started: " + result.getName());
