@@ -1,19 +1,23 @@
 package utils.appium.driverManager;
 
 import io.appium.java_client.AppiumDriver;
+import screens.base.LoginScreen;
+import utils.common.LogsUtils;
 import utils.common.PropertiesUtils;
 
 public class DriverManager {
    static  ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
 
     public static void initDriver() {
+        String platformName= PropertiesUtils.getProperty("platformName");
         if(driver.get() == null) {
-            if("Android".equalsIgnoreCase(PropertiesUtils.getProperty("Os"))){
+            if("Android".equalsIgnoreCase(platformName)){
                driver.set(new AndroidFactory().createDriver());
-            } else if("iOS".equalsIgnoreCase(PropertiesUtils.getProperty("Os"))) {
+            } else if("iOS".equalsIgnoreCase(platformName)) {
               driver.set(new IosDriverFactory().createDriver());
             } else {
-                throw new IllegalArgumentException("Unsupported OS: " + System.getProperty("Os"));
+                LogsUtils.error("Unsupported platform: " + platformName);
+                throw new IllegalArgumentException("Unsupported platform: " + platformName);
             }
         }
     }

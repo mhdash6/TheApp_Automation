@@ -22,7 +22,7 @@ public abstract class LoginScreen {
     public SecretScreen login(String username, String password) {
         setUsername(username);
         setPassword(password);
-       return tapLoginButton();
+        return tapLoginButton();
     }
 
     public abstract SecretScreen tapLoginButton();
