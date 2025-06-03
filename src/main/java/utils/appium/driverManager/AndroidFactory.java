@@ -17,8 +17,8 @@ public class AndroidFactory implements DriverFactory{
     public   Capabilities setCapabilities() {
         UiAutomator2Options options = new UiAutomator2Options();
         options.setPlatformName("Android");
-        options.setDeviceName(PropertiesUtils.getProperty("DeviceName", "Android Device"));
-        options.setApp(PropertiesUtils.getProperty("AppPath"));
+        options.setDeviceName(PropertiesUtils.getProperty("deviceName", "Android Device"));
+        options.setApp(PropertiesUtils.getProperty("appPath"));
         options.setAutomationName("UiAutomator2");
         if ("true".equalsIgnoreCase(System.getProperty("headless"))) {
             options.headless();

@@ -4,6 +4,7 @@ package utils.appium;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.appium.driverManager.DriverManager;
+import utils.common.LogsUtils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,13 +37,21 @@ public class ElementsActions {
     }
 
     public static String getText(By locator) {
-        WebElement element = findElement(locator);
-        return element.getText();
+        if (isDisplayed(locator)) {
+            WebElement element = findElement(locator);
+            return element.getText();
+        }
+        LogsUtils.warn("Element not displayed: " + locator);
+        return "";
     }
 
     public static String getAttribute(By locator, String attributeName) {
-        WebElement element = findElement(locator);
-        return element.getAttribute(attributeName);
+        if (isDisplayed(locator)) {
+            WebElement element = findElement(locator);
+            return element.getAttribute(attributeName);
+        }
+        LogsUtils.warn("Element not displayed: " + locator);
+        return "";
     }
 
     public static boolean isDisplayed(By locator) {

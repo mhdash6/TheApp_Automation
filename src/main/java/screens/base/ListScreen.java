@@ -13,8 +13,8 @@ public  abstract class ListScreen {
 
     public abstract void acceptAlert() ;
 
-    public abstract void tapCloudName(String cloudName, String direction);
+    public abstract void scrollAndTapCloudName(String cloudName, String direction);
 
-    public abstract void tapCloudName(String cloudName);
+    public abstract void scrollAndTapCloudName(String cloudName);
 
 }

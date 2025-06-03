@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 import static utils.appium.TakeScreenShot.takeScreenShot;
 
 
-public class CustomSoftAssert extends SoftAssert {
+class CustomSoftAssert extends SoftAssert {
     public CustomSoftAssert() {
         super();
     }
@@ -30,7 +30,6 @@ public class CustomSoftAssert extends SoftAssert {
     @Override
     public void onAssertFailure(IAssert<?> assertCommand, AssertionError ex) {
         super.onAssertFailure(assertCommand, ex);
-
         Method testMethod = Reporter.getCurrentTestResult().getMethod().getConstructorOrMethod().getMethod();
         String testName = testMethod.getName();
         File screenshot = takeScreenShot(testName + "_Failed");
@@ -38,7 +37,6 @@ public class CustomSoftAssert extends SoftAssert {
         if (screenshot != null) {
             AllureUtils.attachPng(screenshot);
         }
-
     }
 
 

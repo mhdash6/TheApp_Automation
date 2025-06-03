@@ -9,11 +9,10 @@
         <listener class-name="listeners.RetryListener"/>
     </listeners>
 
-    <test name="LoginTest" >
+    <test name="Android Test" >
         <parameter name="platform" value="Android"/>
         <classes>
-            <class name="testClasses.SampleTest"/>
+            <class name="utils.TestFactory"/>
         </classes>
     </test>
-
 </suite>

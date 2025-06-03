@@ -25,7 +25,7 @@ public class TakeScreenShot {
         LogsUtils.info("Taking screenshot for: " + fileName);
         try {
             File screenshot = DriverManager.getDriver().getScreenshotAs(OutputType.FILE);
-            targetFile = new File(SCREEN_SHOTS_PATH + ThreadContext.get("browser") + fileName + DateTime.getDateTime() + ".png");
+            targetFile = new File(SCREEN_SHOTS_PATH + fileName + DateTime.getDateTime() + ".png");
             Files.copy(screenshot.toPath(), targetFile.toPath());
             LogsUtils.info("Screenshot taken successfully: " + targetFile.getAbsolutePath());
             return targetFile;

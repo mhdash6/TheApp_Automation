@@ -1,0 +1,52 @@
+[
+  {
+    "userName": "alice",
+    "password": "mypassword",
+    "shouldLogin": true,
+    "story": "Successful login with valid credentials",
+    "description": "Verifies that a user with valid username and password can successfully log into the system."
+  },
+  {
+    "userName": "alice",
+    "password": "wrongpassword",
+    "shouldLogin": false,
+    "story": "Failed login due to incorrect password",
+    "description": "Ensures that login fails when a valid username is provided with an incorrect password."
+  },
+  {
+    "userName": "",
+    "password": "mypassword",
+    "shouldLogin": false,
+    "story": "Login attempt with missing username",
+    "description": "Checks that the system prevents login when the username field is left empty."
+  },
+  {
+    "userName": "charlie",
+    "password": "",
+    "shouldLogin": false,
+    "story": "Login attempt with missing password",
+    "description": "Verifies that login is rejected when the password field is left empty."
+  },
+  {
+    "userName": "david",
+    "password": "my pass word",
+    "shouldLogin": false,
+    "story": "Login attempt with password containing whitespace",
+    "description": "Tests that passwords containing whitespace characters are handled properly and result in login failure."
+  },
+  {
+    "userName": "ali<script>",
+    "password": "mypassword",
+    "shouldLogin": false,
+    "story": "Login attempt with special characters in username",
+    "description": "Validates that usernames containing potentially malicious characters like scripts are rejected."
+  },
+  {
+    "userName": "frank",
+    "password": "mypassword",
+    "shouldLogin": false,
+    "story": "Login attempt for a locked user account",
+    "description": "Ensures that users whose accounts are locked cannot log in, even with correct credentials."
+  }
+]
+

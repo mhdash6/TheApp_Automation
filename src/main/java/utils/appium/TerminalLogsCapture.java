@@ -9,9 +9,9 @@ public class TerminalLogsCapture extends PrintStream {
 
     public TerminalLogsCapture() {
         super(new OutputStream() {
-            private final StringBuilder buffer = new StringBuilder();
+            private final StringBuffer buffer = new StringBuffer();
             @Override
-            public synchronized   void write(int b) {
+            public synchronized void write(int b) {
                 if (b == '\n') {
                     String logLine = buffer.toString().trim();
                     if (!logLine.isEmpty()) {
@@ -22,7 +22,7 @@ public class TerminalLogsCapture extends PrintStream {
                     buffer.append((char) b);
                 }
             }
-            private synchronized void log(String logLine) {
+            private void log(String logLine) {
                 String firstWord = logLine.split("\\s+")[0].replaceAll("[\\[\\]:]", "").toLowerCase();
                 switch (firstWord) {
                     case "error" -> LogsUtils.error(logLine);

@@ -1,0 +1,20 @@
+[
+  {
+    "firstInput": "",
+    "secondInput": "",
+    "story": "clicking save with empty inputs",
+    "description": "Nothing is entered, leaving the echo box completely blank and pressing save."
+  },
+  {
+    "firstInput": "Hello there",
+    "secondInput": "",
+    "story": "Typing and saving a single message",
+    "description": "An initial message is typed and saved, with no further changes."
+  },
+  {
+    "firstInput": "Hello",
+    "secondInput": "Hello again",
+    "story": "Updating the message after initial input",
+    "description": "The message is first set, then changed to a new value, verifying update functionality."
+  }
+]

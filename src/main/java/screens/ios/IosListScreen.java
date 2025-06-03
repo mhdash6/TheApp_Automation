@@ -1,6 +1,7 @@
 package screens.ios;
 
 import io.appium.java_client.AppiumBy;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import screens.base.ListScreen;
 import utils.appium.ElementsActions;
@@ -25,6 +26,7 @@ public class IosListScreen extends ListScreen {
     }
 
     @Override
+    @Step("tap Learn More button")
     public void tapLearnMore() {
         if (cloudName != null ) {
             ElementsActions.click( getLearnMoreButtonLocator(cloudName));
@@ -33,7 +35,9 @@ public class IosListScreen extends ListScreen {
         }
 
     }
+
     @Override
+    @Step("Get Learn More text")
     public String getLearnMoreText() {
         if (cloudName != null ) {
            return ElementsActions.getText(getLearnMoreTextLocator(cloudName));
@@ -42,14 +46,17 @@ public class IosListScreen extends ListScreen {
         return "";
     }
 
+
     @Override
+    @Step("accept Alert")
     public void acceptAlert() {
         ElementsActions.click(alertOkBtn);
         cloudName= null;
     }
 
     @Override
-    public void tapCloudName(String cloudName, String direction) {
+    @Step("tap Cloud Name: {cloudName} after Scrolling in direction: {direction}")
+    public void scrollAndTapCloudName(String cloudName, String direction) {
         this.cloudName = cloudName;
         String predicateString = String.format("name ==[c] '%s' or label ==[c] '%s'", cloudName, cloudName);
         IosActions.scrollToElement(predicateString, direction);
@@ -57,8 +64,9 @@ public class IosListScreen extends ListScreen {
     }
 
     @Override
-    public void tapCloudName(String cloudName) {
-        tapCloudName(cloudName, "down");
+    @Step("tap Error Alert Ok button")
+    public void scrollAndTapCloudName(String cloudName) {
+        scrollAndTapCloudName(cloudName, "down");
     }
 
 

@@ -1,6 +1,7 @@
 package screens.base;
 
 import io.appium.java_client.AppiumBy;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
 public abstract class HomeScreen {
@@ -9,6 +10,7 @@ public abstract class HomeScreen {
     protected By listDemoBtn = AppiumBy.accessibilityId("List Demo");
 
     public abstract EchoBoxScreen navToEchoBox();
+
 
     public abstract LoginScreen navToLogin();
 

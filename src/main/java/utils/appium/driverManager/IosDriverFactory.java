@@ -19,9 +19,9 @@ public class IosDriverFactory implements DriverFactory {
     public  Capabilities setCapabilities() {
       XCUITestOptions options = new XCUITestOptions();
       options.setPlatformName("iOS");
-      options.setDeviceName(PropertiesUtils.getProperty("DeviceName", "iPhone Simulator"));
-      options.setPlatformVersion(PropertiesUtils.getProperty("PlatformVersion", "16.0"));
-      options.setApp(PropertiesUtils.getProperty("AppPath"));
+      options.setDeviceName(PropertiesUtils.getProperty("deviceName", "iPhone Device"));
+      options.setPlatformVersion(PropertiesUtils.getProperty("platformVersion", "16.0"));
+      options.setApp(PropertiesUtils.getProperty("appPath"));
       options.setAutomationName("XCUITest");
         if ("true".equalsIgnoreCase(System.getProperty("headless"))) {
             options.headless();

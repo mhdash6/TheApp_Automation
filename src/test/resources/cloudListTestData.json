@@ -1,0 +1,33 @@
+[
+  {
+    "firstCloudName": "SAP",
+    "firstCloudLearnMore": "This is a an enterprise service with wide-ranging services required for application development cloud",
+    "secondCloudName": "Altostratus",
+    "secondCloudDirection": "up",
+    "secondCloudLearnMore": "This is a mid-level stratiform non-convective cloud",
+    "story": "exploring multiple services by navigating through the list.",
+    "description": "The user scrolls all the way to the bottom of the list to select and view the details of a service. After reviewing it, they scroll all the way back up and select another service at the top of the list."
+  },
+  {
+    "firstCloudName": "AWS",
+    "firstCloudLearnMore": "This is a the safest and protected platform of cloud service which offers a wide set of infrastructure services like database storage, computing power, networking cloud",
+    "secondCloudName": "",
+    "secondCloudDirection": "",
+    "secondCloudLearnMore": "",
+    "story": "viewing a service directly visible on screen.",
+    "description": "The user selects a service that is immediately visible upon accessing the screen and proceeds to view its detailed information without navigating elsewhere in the list."
+  },
+
+  {
+    "firstCloudName": "Azure",
+    "firstCloudLearnMore": "Wrong description for Azure",
+    "secondCloudName": "",
+    "secondCloudDirection": "",
+    "secondCloudLearnMore": "",
+    "story": "viewing a service and intentionally failing test case.",
+    "description": "The user selects a service that is immediately visible upon accessing the screen and proceeds to view its detailed information without navigating elsewhere in the list."
+  }
+
+
+
+]
