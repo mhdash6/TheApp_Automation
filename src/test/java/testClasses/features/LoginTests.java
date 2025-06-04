@@ -1,6 +1,8 @@
 package testClasses.features;
 
-import io.qameta.allure.*;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import listeners.DynamicAllureListener;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;

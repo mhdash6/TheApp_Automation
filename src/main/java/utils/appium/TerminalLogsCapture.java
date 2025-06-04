@@ -2,6 +2,7 @@ package utils.appium;
 
 
 import utils.common.LogsUtils;
+
 import java.io.OutputStream;
 import java.io.PrintStream;
 

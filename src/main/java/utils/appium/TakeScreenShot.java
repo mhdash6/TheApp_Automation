@@ -1,14 +1,11 @@
 package utils.appium;
 
 
-import org.apache.logging.log4j.ThreadContext;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.UnhandledAlertException;
 import utils.appium.driverManager.DriverManager;
 import utils.common.DateTime;
 import utils.common.LogsUtils;
-
 
 import java.io.File;
 import java.nio.file.Files;

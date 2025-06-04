@@ -1,6 +1,5 @@
 package utils.common.assertions;
 
-import io.qameta.allure.Step;
 import org.testng.ITestResult;
 
 public class AssertionManager {

@@ -1,20 +1,12 @@
 package listeners;
 
 
-import io.qameta.allure.Allure;
 import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
-import org.testng.internal.TestResult;
-import utils.appium.TerminalLogsCapture;
 import utils.appium.driverManager.DriverManager;
 import utils.common.LogsUtils;
 import utils.common.assertions.AssertionManager;
-
-import java.io.PrintStream;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.util.UUID;
 
 import static utils.common.AllureUtils.attachLogs;
 

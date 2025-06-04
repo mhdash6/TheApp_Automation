@@ -1,9 +1,6 @@
 package listeners;
 
-import org.apache.logging.log4j.ThreadContext;
 import org.testng.IExecutionListener;
-
-import org.testng.annotations.Factory;
 import utils.appium.ServerManager;
 import utils.appium.TakeScreenShot;
 import utils.appium.TerminalLogsCapture;

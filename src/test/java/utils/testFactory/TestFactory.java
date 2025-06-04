@@ -1,7 +1,6 @@
 package utils.testFactory;
 
 
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Factory;
 import testClasses.features.CloudListTest;
 import testClasses.features.EchoBoxTests;

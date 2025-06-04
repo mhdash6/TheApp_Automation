@@ -1,7 +1,5 @@
 package screens.base;
 
-import io.qameta.allure.Step;
-
 public abstract class SecretScreen {
 
 
