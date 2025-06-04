@@ -14,7 +14,6 @@ public class TestResultListener implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        LogsUtils.info("Test started: " + result.getName());
     }
 
     @Override
@@ -35,7 +34,7 @@ public class TestResultListener implements ITestListener {
     @Override
     public void onStart(ITestContext context) {
         LogsUtils.info("Test run started");
-        PropertiesUtils.loadProperties(context.getCurrentXmlTest().getParameter("platform"));
+        PropertiesUtils.loadProperties(context.getCurrentXmlTest().getParameter("platformName"));
     }
 
     @Override

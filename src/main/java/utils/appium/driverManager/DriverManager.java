@@ -1,9 +1,10 @@
 package utils.appium.driverManager;
 
 import io.appium.java_client.AppiumDriver;
-import screens.base.LoginScreen;
 import utils.common.LogsUtils;
 import utils.common.PropertiesUtils;
+
+
 
 public class DriverManager {
    static  ThreadLocal<AppiumDriver> driver = new ThreadLocal<>();
@@ -33,5 +34,8 @@ public class DriverManager {
     }
 
 
+    public static void setDriver(AppiumDriver appiumDriver) {
+        driver.set(appiumDriver);
+    }
 
 }

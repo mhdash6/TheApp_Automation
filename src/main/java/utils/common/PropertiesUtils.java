@@ -21,12 +21,9 @@ public class PropertiesUtils {
             if ("Android".equalsIgnoreCase(platform)) {
                 path = ANDROID_PATH;
                 LogsUtils.info("Loading Android properties from: " + path);
-            } else if ("iOS".equalsIgnoreCase(platform)) {
+            } else   {
                 path = IOS_PATH;
                 LogsUtils.info("Loading iOS properties from: " + path);
-            } else {
-                LogsUtils.error("Unsupported platform: " + platform);
-                throw new IllegalArgumentException("Unsupported Platform: " + platform);
             }
 
             try (InputStream is = Files.newInputStream(Path.of(path))) {
