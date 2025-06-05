@@ -36,6 +36,4 @@ build/
 
 ### Mac OS ###
 .DS_Store
-/src/main/resources/Env/AndroidEnv.properties
-/src/main/resources/Env/IosEnv.properties
-/src/main/resources/testConfiguration.properties
+
