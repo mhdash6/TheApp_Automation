@@ -23,11 +23,9 @@ public class TestFactory {
         return new Object[] {new EchoBoxTests(echoBoxTestData)};
     }
 
-    @Factory(dataProvider = "loginData", dataProviderClass = DataProviders.class)
+   @Factory(dataProvider = "loginData", dataProviderClass = DataProviders.class)
     public Object[] createInstances(LoginTestData loginTestData) {
-        return new Object[]{
-                new LoginTests(loginTestData)
-        };
-    }
+        return new Object[]{ new LoginTests(loginTestData)};
+   }
 
 }

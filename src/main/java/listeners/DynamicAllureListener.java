@@ -6,7 +6,7 @@ import org.testng.IInvokedMethod;
 import org.testng.IInvokedMethodListener;
 import org.testng.ITestResult;
 import utils.common.LogsUtils;
-
+import utils.common.PropertiesUtils;
 import java.lang.reflect.Field;
 import java.util.UUID;
 
@@ -28,7 +28,7 @@ public class DynamicAllureListener implements IInvokedMethodListener {
                 Allure.getLifecycle().updateTestCase(tc -> tc.setDescription(description));
             }
             Allure.getLifecycle().updateTestCase(tc->
-                    tc.setHistoryId(UUID.nameUUIDFromBytes((story + description).getBytes()).toString())
+                    tc.setHistoryId(UUID.nameUUIDFromBytes((PropertiesUtils.getProperty("platformName")+story + description).getBytes()).toString())
             );
         } catch (Exception e) {
             LogsUtils.error("Failed to set story or description: " + e.getMessage());

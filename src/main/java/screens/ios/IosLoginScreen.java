@@ -9,7 +9,7 @@ import utils.appium.ElementsActions;
 
 public class IosLoginScreen extends LoginScreen {
     public static final By USERNAME = AppiumBy.iOSClassChain("**/XCUIElementTypeTextField[`name == 'username'`]");
-    public static final By errorAlertMsg = AppiumBy.iOSClassChain("**/XCUIElementTypeAlert/**[`name CONTAINS 'Invalid'`]");
+    public static final By errorAlertMsg = AppiumBy.iOSClassChain("**/XCUIElementTypeStaticText[`name BEGINSWITH 'Invalid'`]");
     public static final By errorAlertBtn = AppiumBy.accessibilityId("OK");
 
     @Override

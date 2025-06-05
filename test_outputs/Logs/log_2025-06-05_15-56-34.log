@@ -1,0 +1,108 @@
+[DEBUG] - [05-06-2025 15:56:34] [org.testng.TestNG] - suiteXmlPath: "/Users/mahmoudfarahat/Documents/TheApp_Automation/test_runners/IosTestSuite.xml"
+[INFO] - [05-06-2025 15:56:35] [utils.common.FilesUtils] - Directory already exists: test_outputs/logs
+[INFO] - [05-06-2025 15:56:35] [utils.common.FilesUtils] - Directory already exists: test_outputs/allure_results
+[INFO] - [05-06-2025 15:56:35] [utils.common.FilesUtils] - Directory already exists: test_outputs/screenshots
+[INFO] - [05-06-2025 15:56:35] [utils.common.FilesUtils] - Directory already exists: test_outputs/allure_report
+[INFO] - [05-06-2025 15:56:35] [utils.common.FilesUtils] - Deleting files or folders in: /Users/mahmoudfarahat/Documents/TheApp_Automation/test_outputs/allure_results
+[INFO] - [05-06-2025 15:56:35] [utils.common.FilesUtils] - Deleting files or folders in: /Users/mahmoudfarahat/Documents/TheApp_Automation/test_outputs/screenshots
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Reading JSON file from path: src/test/resources/cloudListTestData.json
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Successfully deserialized JSON to: CloudListTestData[]
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Reading JSON file from path: src/test/resources/echoBoxTestData.json
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Successfully deserialized JSON to: EchoBoxTestData[]
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Reading JSON file from path: src/test/resources/loginTestData.json
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Successfully deserialized JSON to: LoginTestData[]
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Reading JSON file from path: src/test/resources/cloudListTestData.json
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Successfully deserialized JSON to: CloudListTestData[]
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Reading JSON file from path: src/test/resources/echoBoxTestData.json
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Successfully deserialized JSON to: EchoBoxTestData[]
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Reading JSON file from path: src/test/resources/loginTestData.json
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Successfully deserialized JSON to: LoginTestData[]
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Reading JSON file from path: src/test/resources/cloudListTestData.json
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Successfully deserialized JSON to: CloudListTestData[]
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Reading JSON file from path: src/test/resources/echoBoxTestData.json
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Successfully deserialized JSON to: EchoBoxTestData[]
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Reading JSON file from path: src/test/resources/loginTestData.json
+[INFO] - [05-06-2025 15:56:35] [utils.common.JsonUtils] - Successfully deserialized JSON to: LoginTestData[]
+[INFO] - [05-06-2025 15:56:35] [listeners.TestResultListener] - Test run started
+[INFO] - [05-06-2025 15:56:35] [utils.common.PropertiesUtils] - Loading iOS properties from: src/main/resources/Env/IosEnv.properties
+[INFO] - [05-06-2025 15:56:35] [utils.appium.TerminalLogsCapture$1] - [Appium] Welcome to Appium v2.19.0 (REV 54c8b127ea2263fbbaf1354e3d8d86025e387ea6)
+[INFO] - [05-06-2025 15:56:35] [utils.appium.TerminalLogsCapture$1] - [Appium] Non-default server args:
+[INFO] - [05-06-2025 15:56:35] [utils.appium.TerminalLogsCapture$1] - [Appium] { allowInsecure: [ 'get_server_logs' ], logNoColors: true }
+[INFO] - [05-06-2025 15:56:35] [utils.appium.TerminalLogsCapture$1] - [Appium] Explicitly enabling insecure features:
+[INFO] - [05-06-2025 15:56:35] [utils.appium.TerminalLogsCapture$1] - [Appium]     *:get_server_logs
+[INFO] - [05-06-2025 15:56:35] [utils.appium.TerminalLogsCapture$1] - [Appium] The autodetected Appium home path: /Users/mahmoudfarahat/.appium
+[INFO] - [05-06-2025 15:56:35] [utils.appium.TerminalLogsCapture$1] - [Appium] Attempting to load driver uiautomator2...
+[INFO] - [05-06-2025 15:56:35] [utils.appium.TerminalLogsCapture$1] - [Appium] Attempting to load driver xcuitest...
+[INFO] - [05-06-2025 15:56:35] [utils.appium.TerminalLogsCapture$1] - [Appium] Requiring driver at /Users/mahmoudfarahat/.appium/node_modules/appium-xcuitest-driver/build/index.js
+[INFO] - [05-06-2025 15:56:35] [utils.appium.TerminalLogsCapture$1] - [Appium] Requiring driver at /Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[INFO] - [05-06-2025 15:56:36] [listeners.MethodInvocationListener] - Finished test: testCloudList
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Attaching logs for test: testCloudList
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Logs attached successfully for test: testCloudList
+[INFO] - [05-06-2025 15:56:36] [listeners.TestResultListener] - Test failed: testCloudList
+[INFO] - [05-06-2025 15:56:36] [listeners.MethodInvocationListener] - Finished test: testCloudList
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Attaching logs for test: testCloudList
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Logs attached successfully for test: testCloudList
+[INFO] - [05-06-2025 15:56:36] [listeners.TestResultListener] - Test failed: testCloudList
+[INFO] - [05-06-2025 15:56:36] [listeners.MethodInvocationListener] - Finished test: testCloudList
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Attaching logs for test: testCloudList
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Logs attached successfully for test: testCloudList
+[INFO] - [05-06-2025 15:56:36] [listeners.TestResultListener] - Test failed: testCloudList
+[INFO] - [05-06-2025 15:56:36] [utils.appium.TerminalLogsCapture$1] - [Appium] XCUITestDriver has been successfully loaded in 0.454s
+[INFO] - [05-06-2025 15:56:36] [listeners.MethodInvocationListener] - Finished test: testEchoBox
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Attaching logs for test: testEchoBox
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Logs attached successfully for test: testEchoBox
+[INFO] - [05-06-2025 15:56:36] [listeners.TestResultListener] - Test failed: testEchoBox
+[INFO] - [05-06-2025 15:56:36] [listeners.MethodInvocationListener] - Finished test: testEchoBox
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Attaching logs for test: testEchoBox
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Logs attached successfully for test: testEchoBox
+[INFO] - [05-06-2025 15:56:36] [listeners.TestResultListener] - Test failed: testEchoBox
+[INFO] - [05-06-2025 15:56:36] [listeners.MethodInvocationListener] - Finished test: testEchoBox
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Attaching logs for test: testEchoBox
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Logs attached successfully for test: testEchoBox
+[INFO] - [05-06-2025 15:56:36] [listeners.TestResultListener] - Test failed: testEchoBox
+[INFO] - [05-06-2025 15:56:36] [listeners.MethodInvocationListener] - Finished test: testLogin
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Attaching logs for test: testLogin
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Logs attached successfully for test: testLogin
+[INFO] - [05-06-2025 15:56:36] [listeners.TestResultListener] - Test failed: testLogin
+[INFO] - [05-06-2025 15:56:36] [utils.appium.TerminalLogsCapture$1] - [Appium] AndroidUiautomator2Driver has been successfully loaded in 0.853s
+[INFO] - [05-06-2025 15:56:36] [utils.appium.TerminalLogsCapture$1] - [HTTP] Could not start REST http interface listener. The requested port may already be in use. Please make sure there is no other instance of this server running already.
+[INFO] - [05-06-2025 15:56:36] [utils.appium.TerminalLogsCapture$1] - [Appium] Could not configure Appium server. It's possible that a driver or plugin tried to update the server and failed. Original error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[INFO] - [05-06-2025 15:56:36] [utils.appium.TerminalLogsCapture$1] - [Appium] Error: listen EADDRINUSE: address already in use 0.0.0.0:4723
+[INFO] - [05-06-2025 15:56:36] [utils.appium.TerminalLogsCapture$1] - at Server.setupListenHandle [as _listen2] (node:net:1939:16)
+[INFO] - [05-06-2025 15:56:36] [utils.appium.TerminalLogsCapture$1] - at listenInCluster (node:net:1996:12)
+[INFO] - [05-06-2025 15:56:36] [utils.appium.TerminalLogsCapture$1] - at node:net:2205:7
+[INFO] - [05-06-2025 15:56:36] [utils.appium.TerminalLogsCapture$1] - at processTicksAndRejections (node:internal/process/task_queues:90:21)
+[INFO] - [05-06-2025 15:56:36] [listeners.MethodInvocationListener] - Finished test: testLogin
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Attaching logs for test: testLogin
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Logs attached successfully for test: testLogin
+[INFO] - [05-06-2025 15:56:36] [listeners.TestResultListener] - Test failed: testLogin
+[INFO] - [05-06-2025 15:56:36] [listeners.MethodInvocationListener] - Finished test: testLogin
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Attaching logs for test: testLogin
+[INFO] - [05-06-2025 15:56:36] [utils.common.AllureUtils] - Logs attached successfully for test: testLogin
+[INFO] - [05-06-2025 15:56:36] [listeners.TestResultListener] - Test failed: testLogin
+[INFO] - [05-06-2025 15:56:37] [listeners.MethodInvocationListener] - Finished test: testLogin
+[INFO] - [05-06-2025 15:56:37] [utils.common.AllureUtils] - Attaching logs for test: testLogin
+[INFO] - [05-06-2025 15:56:37] [utils.common.AllureUtils] - Logs attached successfully for test: testLogin
+[INFO] - [05-06-2025 15:56:37] [listeners.TestResultListener] - Test failed: testLogin
+[INFO] - [05-06-2025 15:56:37] [listeners.MethodInvocationListener] - Finished test: testLogin
+[INFO] - [05-06-2025 15:56:37] [utils.common.AllureUtils] - Attaching logs for test: testLogin
+[INFO] - [05-06-2025 15:56:37] [utils.common.AllureUtils] - Logs attached successfully for test: testLogin
+[INFO] - [05-06-2025 15:56:37] [listeners.TestResultListener] - Test failed: testLogin
+[INFO] - [05-06-2025 15:56:37] [listeners.MethodInvocationListener] - Finished test: testLogin
+[INFO] - [05-06-2025 15:56:37] [utils.common.AllureUtils] - Attaching logs for test: testLogin
+[INFO] - [05-06-2025 15:56:37] [utils.common.AllureUtils] - Logs attached successfully for test: testLogin
+[INFO] - [05-06-2025 15:56:37] [listeners.TestResultListener] - Test failed: testLogin
+[INFO] - [05-06-2025 15:56:37] [listeners.MethodInvocationListener] - Finished test: testLogin
+[INFO] - [05-06-2025 15:56:37] [utils.common.AllureUtils] - Attaching logs for test: testLogin
+[INFO] - [05-06-2025 15:56:37] [utils.common.AllureUtils] - Logs attached successfully for test: testLogin
+[INFO] - [05-06-2025 15:56:37] [listeners.TestResultListener] - Test failed: testLogin
+[INFO] - [05-06-2025 15:56:37] [listeners.TestResultListener] - Test run finished
+[INFO] - [05-06-2025 15:56:37] [utils.common.TerminalUtils] - Executing command: allure generate test_outputs/allure_results -o test_outputs/allure_report --clean --single-file
+[INFO] - [05-06-2025 15:56:38] [utils.common.TerminalUtils] - Command executed: allure generate test_outputs/allure_results -o test_outputs/allure_report --clean --single-file
+[INFO] - [05-06-2025 15:56:38] [utils.common.AllureUtils] - Allure report generated successfully
+[INFO] - [05-06-2025 15:56:38] [utils.common.FilesUtils] - Found latest file in test_outputs/allure_report: test_outputs/allure_report/index.html
+[INFO] - [05-06-2025 15:56:38] [utils.common.FilesUtils] - File renamed successfully from test_outputs/allure_report/index.html to test_outputs/allure_report/Report 2025-06-05 15-56-38.html
+[INFO] - [05-06-2025 15:56:38] [utils.common.AllureUtils] - Allure report renamed successfully to: test_outputs/allure_report/Report 2025-06-05 15-56-38.html
+[INFO] - [05-06-2025 15:56:38] [utils.common.AllureUtils] - Opening allure report: test_outputs/allure_report/Report 2025-06-05 15-56-38.html
+[INFO] - [05-06-2025 15:56:38] [utils.common.TerminalUtils] - Executing command: open "test_outputs/allure_report/Report 2025-06-05 15-56-38.html"
+[INFO] - [05-06-2025 15:56:38] [utils.common.TerminalUtils] - Command executed: open "test_outputs/allure_report/Report 2025-06-05 15-56-38.html"

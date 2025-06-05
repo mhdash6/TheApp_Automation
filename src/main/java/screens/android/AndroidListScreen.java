@@ -7,6 +7,8 @@ import screens.base.ListScreen;
 import utils.android.AndroidActions;
 import utils.appium.ElementsActions;
 import utils.common.LogsUtils;
+import utils.appium.Waits;
+import java.time.Duration;
 
 
 public class AndroidListScreen extends ListScreen {
@@ -57,6 +59,7 @@ public class AndroidListScreen extends ListScreen {
         this.cloudName = cloudName;
         String UiSelector =  String.format("new UiSelector().text(\"%s\")", cloudName);
         AndroidActions.scrollToElement(UiSelector);
+        Waits.waitForScrollToStop(AppiumBy.androidUIAutomator(UiSelector), Duration.ofSeconds(5));
         ElementsActions.click(AppiumBy.androidUIAutomator(UiSelector));
     }
 

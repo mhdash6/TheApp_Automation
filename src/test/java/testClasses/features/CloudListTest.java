@@ -35,15 +35,15 @@ public class CloudListTest
         listScreen.tapLearnMore();
         AssertionManager.assertEquals(listScreen.getLearnMoreText(),
                 cloudListTestData.firstCloudLearnMore(),
-                "Learn more text should match the expected text: " + cloudListTestData.firstCloudLearnMore());
+                "Learn more text should match the expected text: " );
         listScreen.acceptAlert();
-
+        
         if (cloudListTestData.hasSecondCloud()) {
             listScreen.scrollAndTapCloudName(cloudListTestData.secondCloudName(), cloudListTestData.secondCloudDirection());
             listScreen.tapLearnMore();
             AssertionManager.assertEquals(listScreen.getLearnMoreText(),
                     cloudListTestData.secondCloudLearnMore(),
-                    "Learn more text should match the expected text: " + cloudListTestData.secondCloudLearnMore());
+                    "Learn more text should match the expected text: " );
         }
     }
 

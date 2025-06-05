@@ -15,8 +15,6 @@ public class TakeScreenShot {
 
     private TakeScreenShot() {
     }
-
-
     public static File takeScreenShot(String fileName) {
         File targetFile = null;
         LogsUtils.info("Taking screenshot for: " + fileName);

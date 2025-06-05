@@ -17,6 +17,7 @@ public class ElementsActions {
            allElements.addAll(elements);
         }
         return allElements;
+    
     }
 
     public static WebElement findElement(By locator) {

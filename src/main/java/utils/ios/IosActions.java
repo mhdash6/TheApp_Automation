@@ -3,6 +3,8 @@ package utils.ios;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 import utils.appium.driverManager.DriverManager;
+import org.openqa.selenium.Keys;
+import utils.common.LogsUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -26,11 +28,12 @@ public class IosActions {
         DriverManager.getDriver().executeScript("mobile: scroll", params);
     }
 
-    public static void scrollToElement(String predicateString, String direction) {
+    public static void scrollToElement(WebElement element,String predicateString, String direction) {
         Map<String, Object> params = new HashMap<>();
+        params.put("element", ((RemoteWebElement) element).getId());
         params.put("predicateString", predicateString);
         params.put("direction", direction);
-        DriverManager.getDriver().executeScript("mobile: scrollToElement", params);
+        DriverManager.getDriver().executeScript("mobile: scroll", params);
     }
 
 
@@ -98,4 +101,14 @@ public class IosActions {
         params.put("buttonLabel", buttonLabel);
         DriverManager.getDriver().executeScript("mobile: alert", params);
     }
+
+    public static void setValue(WebElement element, String value) {
+        String inputValue = element.getText();
+        if (inputValue != null ) {
+            for(int i = 0; i < inputValue.length(); i++) {
+                element.sendKeys(Keys.BACK_SPACE); 
+            }
+    }
+      element.sendKeys(value);
+      }
 }

@@ -1,0 +1,669 @@
+[INFO] - [2025-06-05 19-31-39] - [HTTP] Request idempotency key: f3268a7f-35cd-4515-8c89-cb32b6a4256e
+[INFO] - [2025-06-05 19-31-39] - [HTTP] --> POST /session {"capabilities":{"firstMatch":[{"appium:systemPort":"8100","appium:deviceName":"Pixel 9 Pro XL","platformName":"ANDROID","appium:automationName":"UiAutomator2","appium:app":"./src/main/resources/AUT/TheApp.apk"}]}}
+[INFO] - [2025-06-05 19-31-39] - [AppiumDriver@5e4d] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{"appium:systemPort":"8100","appium:deviceName":"Pixel 9 Pro XL","platformName":"ANDROID","appium:automationName":"UiAutomator2","appium:app":"./src/main/resources/AUT/TheApp.apk"}]}]
+[INFO] - [2025-06-05 19-31-39] - [AppiumDriver@5e4d] Event 'newSessionRequested' logged at 1749141099621 (19:31:39 GMT+0300 (Eastern European Summer Time))
+[INFO] - [2025-06-05 19-31-39] - [Appium] Attempting to find matching driver for automationName 'UiAutomator2' and platformName 'ANDROID'
+[INFO] - [2025-06-05 19-31-39] - [Appium] The 'uiautomator2' driver was installed and matched caps.
+[INFO] - [2025-06-05 19-31-39] - [Appium] Will require it at /Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver
+[INFO] - [2025-06-05 19-31-39] - [Appium] Requiring driver at /Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[INFO] - [2025-06-05 19-31-39] - [AppiumDriver@5e4d] Appium v2.19.0 creating new AndroidUiautomator2Driver (v4.2.3) session
+[INFO] - [2025-06-05 19-31-39] - [AppiumDriver@5e4d] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+[INFO] - [2025-06-05 19-31-39] - [AppiumDriver@5e4d] Appium's BaseDriver version is 9.18.0
+[INFO] - [2025-06-05 19-31-39] - [AppiumDriver@5e4d] AndroidUiautomator2Driver's BaseDriver version is 9.18.0
+[INFO] - [2025-06-05 19-31-39] - [AppiumDriver@5e4d] Explicitly enabling insecure features for this session as per the server configuration:
+[INFO] - [2025-06-05 19-31-39] - [AppiumDriver@5e4d]     *:get_server_logs
+[INFO] - [2025-06-05 19-31-39] - [AndroidUiautomator2Driver@b662]
+[INFO] - [2025-06-05 19-31-39] - [AndroidUiautomator2Driver@b662] Creating session with W3C capabilities: {
+[INFO] - [2025-06-05 19-31-39] - "alwaysMatch": {
+[INFO] - [2025-06-05 19-31-39] - "platformName": "ANDROID",
+[INFO] - [2025-06-05 19-31-39] - "appium:systemPort": "8100",
+[INFO] - [2025-06-05 19-31-39] - "appium:deviceName": "Pixel 9 Pro XL",
+[INFO] - [2025-06-05 19-31-39] - "appium:automationName": "UiAutomator2",
+[INFO] - [2025-06-05 19-31-39] - "appium:app": "./src/main/resources/AUT/TheApp.apk"
+[INFO] - [2025-06-05 19-31-39] - },
+[INFO] - [2025-06-05 19-31-39] - "firstMatch": [
+[INFO] - [2025-06-05 19-31-39] - {}
+[INFO] - [2025-06-05 19-31-39] - ]
+[INFO] - [2025-06-05 19-31-39] - }
+[INFO] - [2025-06-05 19-31-39] - [BaseDriver] Number capability passed in as string. Functionality may be compromised.
+[INFO] - [2025-06-05 19-31-39] - [AndroidUiautomator2Driver@b662] Capability 'systemPort' changed from string ('8100') to integer (8100). This may cause unexpected behavior
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Session created with session id: 9691b199-3e7b-45bf-8d14-b33ed596a6bf
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Using 'adb' from '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Retrieving device list
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Trying to find connected Android devices
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Getting connected devices
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Using device: emulator-5554
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Using 'adb' from '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Setting device id to emulator-5554
+[INFO] - [2025-06-05 19-31-39] - [9691b199][BaseDriver] The current application path './src/main/resources/AUT/TheApp.apk' is not absolute and has been rewritten to '/Users/mahmoudfarahat/Documents/TheApp_Automation/src/main/resources/AUT/TheApp.apk'. Consider using absolute paths rather than relative
+[INFO] - [2025-06-05 19-31-39] - [9691b199][BaseDriver] Using local app '/Users/mahmoudfarahat/Documents/TheApp_Automation/src/main/resources/AUT/TheApp.apk'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Checking whether app is actually present
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Current device property 'ro.build.version.sdk': 35
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Getting device platform version
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Current device property 'ro.build.version.release': 15
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Device API level: 35
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Relaxing hidden api policy
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Parsing package and activity from the 'TheApp.apk' file manifest
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Using 'aapt2' from '/Users/mahmoudfarahat/Library/Android/sdk/build-tools/36.0.0/aapt2'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Reading package manifest: '/Users/mahmoudfarahat/Library/Android/sdk/build-tools/36.0.0/aapt2 dump badging /Users/mahmoudfarahat/Documents/TheApp_Automation/src/main/resources/AUT/TheApp.apk'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Package name: 'com.appiumpro.the_app'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Main activity name: 'com.appiumpro.the_app.MainActivity'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Resolved launch package -> activity: com.appiumpro.the_app -> com.appiumpro.the_app.MainActivity
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Resolved wait package -> activity: com.appiumpro.the_app -> com.appiumpro.the_app.MainActivity
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Pushing settings apk to the device...
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Getting package info for 'io.appium.settings'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Reading package manifest: '/Users/mahmoudfarahat/Library/Android/sdk/build-tools/36.0.0/aapt2 dump badging /Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] The version name of the installed 'io.appium.settings' is greater or equal to the application version name ('5.14.8' >= '5.14.8')
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] There is no need to install/upgrade '/Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] io.appium.settings is already running. There is no need to reset its permissions.
+[INFO] - [2025-06-05 19-31-39] - [9691b199][Logcat] Starting logs capture with command: /Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Forwarding UiAutomator2 Server port 6790 to local port 8100
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Forwarding system: 8100 to device: 6790
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8100 tcp:6790'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] UIA2Proxy options: {"server":"127.0.0.1","port":8100,"keepAlive":true,"scheme":"http","base":"","reqBasePath":"","sessionId":null,"timeout":240000}
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Getting package info for 'io.appium.uiautomator2.server'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Getting install status for io.appium.uiautomator2.server.test
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Checking app cert for /Users/mahmoudfarahat/Documents/TheApp_Automation/src/main/resources/AUT/TheApp.apk
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Reading package manifest: '/Users/mahmoudfarahat/Library/Android/sdk/build-tools/36.0.0/aapt2 dump badging /Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.5.2.apk'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Using the previously cached signature entry for 'TheApp.apk'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Getting package info for 'com.appiumpro.the_app'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package com.appiumpro.the_app'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] 'io.appium.uiautomator2.server.test' is installed
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] The version name of the installed 'io.appium.uiautomator2.server' is greater or equal to the application version name ('7.5.2' >= '7.5.2')
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Server packages status: [{"installState":"sameVersionInstalled","appPath":"/Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.5.2.apk","appId":"io.appium.uiautomator2.server"},{"installState":"sameVersionInstalled","appPath":"/Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Server packages are not going to be (re)installed
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 30000ms for services to be available
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Reading package manifest: '/Users/mahmoudfarahat/Library/Android/sdk/build-tools/36.0.0/aapt2 dump badging /Users/mahmoudfarahat/Documents/TheApp_Automation/src/main/resources/AUT/TheApp.apk'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] The version name of the installed 'com.appiumpro.the_app' is greater or equal to the application version name ('1.12.0' >= '1.12.0')
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] There is no need to install/upgrade '/Users/mahmoudfarahat/Documents/TheApp_Automation/src/main/resources/AUT/TheApp.apk'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][AndroidUiautomator2Driver@b662] Performing fast reset on 'com.appiumpro.the_app'
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Getting install status for com.appiumpro.the_app
+[INFO] - [2025-06-05 19-31-39] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+[INFO] - [2025-06-05 19-31-40] - [9691b199][ADB] 'com.appiumpro.the_app' is installed
+[INFO] - [2025-06-05 19-31-40] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop com.appiumpro.the_app'
+[INFO] - [2025-06-05 19-31-40] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm clear com.appiumpro.the_app'
+[INFO] - [2025-06-05 19-31-40] - [9691b199][AndroidUiautomator2Driver@b662] Performed fast reset on the installed 'com.appiumpro.the_app' application (stop and clear)
+[INFO] - [2025-06-05 19-31-40] - [9691b199][AndroidUiautomator2Driver@b662] Performing shallow cleanup of automation leftovers
+[INFO] - [2025-06-05 19-31-40] - [9691b199][AndroidUiautomator2Driver@b662] No obsolete sessions have been detected (socket hang up)
+[INFO] - [2025-06-05 19-31-40] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server'
+[INFO] - [2025-06-05 19-31-40] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+[INFO] - [2025-06-05 19-31-40] - [9691b199][AndroidUiautomator2Driver@b662] Starting UIAutomator2 server 7.5.2
+[INFO] - [2025-06-05 19-31-40] - [9691b199][AndroidUiautomator2Driver@b662] Using UIAutomator2 server from '/Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.5.2.apk' and test from '/Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+[INFO] - [2025-06-05 19-31-40] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 30000ms for UiAutomator2 to be online...
+[INFO] - [2025-06-05 19-31-40] - [9691b199][ADB] Creating ADB subprocess with args: ["-P","5037","-s","emulator-5554","shell","am","instrument","-w","-e","disableAnalytics","true","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+[INFO] - [2025-06-05 19-31-40] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/status' to command name 'getStatus'
+[INFO] - [2025-06-05 19-31-40] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[INFO] - [2025-06-05 19-31-40] - [9691b199][AndroidUiautomator2Driver@b662] socket hang up
+[INFO] - [2025-06-05 19-31-40] - [9691b199][AndroidUiautomator2Driver@b662] [Instrumentation]
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/status' to command name 'getStatus'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /status] to [GET http://127.0.0.1:8100/status] with no body
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] The initialization of the instrumentation process took 1052ms
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/session' to command name 'createSession'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /session] to [POST http://127.0.0.1:8100/session] with body: {"capabilities":{"firstMatch":[{"platformName":"ANDROID","systemPort":8100,"deviceName":"emulator-5554","automationName":"UiAutomator2","app":"./src/main/resources/AUT/TheApp.apk","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","systemPort":8100,"deviceName":"Pixel 9 Pro XL","automationName":"UiAutomator2","app":"./src/main/resources/AUT/TheApp.apk"},"deviceUDID":"emulator-5554","appPackage":"com.appiumpro.the_app","appActivity":"com.appiumpro.the_app.MainActivity"}],"alwaysMatch":{}}}
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"capabilities":{"firstMatch":[{"platformName":"ANDROID","systemPort":8100,"deviceName":"emulator-5554","automationName":"UiAutomator2","app":"./src/main/resources/AUT/TheApp.apk","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","systemPort":8100,"deviceName":"Pixel 9 Pro XL","automationName":"UiAutomator2","app":"./src/main/resources/AUT/TheApp.apk"},"deviceUDID":"emulator-5554","appPackage":"com.appiumpro.the_app","appActivity":"com.appiumpro.the_app.MainActivity"}],"alwaysMatch":{}},"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0"}}
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Determined the downstream protocol as 'W3C'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/appium/device/pixel_ratio] with no body
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/appium/device/system_bars] with no body
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/window/current/size' to command name 'getWindowSize'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/window/current/size] with no body
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/appium/device/info] with no body
+[INFO] - [2025-06-05 19-31-41] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys power'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":3}
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"height":2992,"width":1344}}
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"statusBar":156}}
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"androidId":"64a33cf150d9bc3c","apiVersion":"35","bluetooth":{"state":"ON"},"brand":"google","carrierName":"T-Mobile","displayDensity":480,"locale":"en_US","manufacturer":"Google","model":"sdk_gphone64_arm64","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":12000,"networkCapabilities":"NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-50,"transportTypes":"TRANSPORT_WIFI"},"detailedState":"CONNECTED","extraInfo":"","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":-1,"subtypeName":"","type":1,"typeName":"WIFI"},{"capabilities":{"SSID":null,"linkDownBandwidthKbps":4300,"linkUpstreamBandwidthKbps":1800,"networkCapabili...
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Screen already unlocked, doing nothing
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Starting 'com.appiumpro.the_app/com.appiumpro.the_app.MainActivity' and waiting for 'com.appiumpro.the_app/com.appiumpro.the_app.MainActivity'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start-activity -W -n com.appiumpro.the_app/com.appiumpro.the_app.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][ADB] Expected package names to be focused within 20000ms: 'com.appiumpro.the_app'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][ADB] Expected activity name patterns to be focused within 20000ms: '/^com\.appiumpro\.the_app\.MainActivity$/'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][ADB] Getting focused package and activity
+[INFO] - [2025-06-05 19-31-41] - [9691b199][ADB] Running '/Users/mahmoudfarahat/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window displays'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][ADB] Focused package: com.appiumpro.the_app
+[INFO] - [2025-06-05 19-31-41] - [9691b199][ADB] Focused fully qualified activity name: com.appiumpro.the_app.MainActivity
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AppiumDriver@5e4d] New AndroidUiautomator2Driver session created successfully, session 9691b199-3e7b-45bf-8d14-b33ed596a6bf added to master session list
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AppiumDriver@5e4d] Event 'newSessionStarted' logged at 1749141101916 (19:31:41 GMT+0300 (Eastern European Summer Time))
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Cached the protocol value 'W3C' for the new session 9691b199-3e7b-45bf-8d14-b33ed596a6bf
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.createSession() result: {"capabilities":{"platformName":"ANDROID","systemPort":8100,"deviceName":"emulator-5554","automationName":"UiAutomator2","app":"./src/main/resources/AUT/TheApp.apk","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","systemPort":8100,"deviceName":"Pixel 9 Pro XL","automationName":"UiAutomator2","app":"./src/main/resources/AUT/TheApp.apk"},"deviceUDID":"emulator-5554","appPackage":"com.appiumpro.the_app","appActivity":"com.appiumpro.the_app.MainActivity","pixelRatio":"3","statBarHeight":156,"viewportRect":{"left":0,"top":156,"width":1344,"height":2836},"deviceApiLevel":35,"platformVersion":"15","deviceManufacturer":"Google","deviceModel":"sdk_gphone64_arm64","deviceScreenSize":"1344x2992","deviceScreenDensity":480}}
+[INFO] - [2025-06-05 19-31-41] - [9691b199][HTTP] <-- POST /session 200 2297 ms - 964
+[INFO] - [2025-06-05 19-31-41] - Starting test: testEchoBox
+[INFO] - [2025-06-05 19-31-41] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"Echo Box","using":"accessibility id"}
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["accessibility id","Echo Box","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-41] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"accessibility id","selector":"Echo Box","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"ELEMENT":"00000000-0000-04c6-ffff-ffff0000001f","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000001f"}}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000001f","ELEMENT":"00000000-0000-04c6-ffff-ffff0000001f"}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 200 869 ms - 137
+[INFO] - [2025-06-05 19-31-42] - [9691b199][HTTP] --> GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000001f/displayed {}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.elementDisplayed() with args: ["00000000-0000-04c6-ffff-ffff0000001f","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element/00000000-0000-04c6-ffff-ffff0000001f/attribute/displayed' to command name 'getAttribute'
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /element/00000000-0000-04c6-ffff-ffff0000001f/attribute/displayed] to [GET http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element/00000000-0000-04c6-ffff-ffff0000001f/attribute/displayed] with no body
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":"true"}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.elementDisplayed() result: true
+[INFO] - [2025-06-05 19-31-42] - [9691b199][HTTP] <-- GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000001f/displayed 200 9 ms - 14
+[INFO] - [2025-06-05 19-31-42] - [9691b199][HTTP] --> GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000001f/enabled {}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.elementEnabled() with args: ["00000000-0000-04c6-ffff-ffff0000001f","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element/00000000-0000-04c6-ffff-ffff0000001f/attribute/enabled' to command name 'getAttribute'
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /element/00000000-0000-04c6-ffff-ffff0000001f/attribute/enabled] to [GET http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element/00000000-0000-04c6-ffff-ffff0000001f/attribute/enabled] with no body
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":"true"}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.elementEnabled() result: true
+[INFO] - [2025-06-05 19-31-42] - [9691b199][HTTP] <-- GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000001f/enabled 200 6 ms - 14
+[INFO] - [2025-06-05 19-31-42] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"Echo Box","using":"accessibility id"}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["accessibility id","Echo Box","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"accessibility id","selector":"Echo Box","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"ELEMENT":"00000000-0000-04c6-ffff-ffff0000001f","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000001f"}}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000001f","ELEMENT":"00000000-0000-04c6-ffff-ffff0000001f"}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 200 10 ms - 137
+[INFO] - [2025-06-05 19-31-42] - [9691b199][HTTP] --> GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000001f/displayed {}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.elementDisplayed() with args: ["00000000-0000-04c6-ffff-ffff0000001f","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element/00000000-0000-04c6-ffff-ffff0000001f/attribute/displayed' to command name 'getAttribute'
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /element/00000000-0000-04c6-ffff-ffff0000001f/attribute/displayed] to [GET http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element/00000000-0000-04c6-ffff-ffff0000001f/attribute/displayed] with no body
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":"true"}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.elementDisplayed() result: true
+[INFO] - [2025-06-05 19-31-42] - [9691b199][HTTP] <-- GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000001f/displayed 200 5 ms - 14
+[INFO] - [2025-06-05 19-31-42] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"Echo Box","using":"accessibility id"}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["accessibility id","Echo Box","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"accessibility id","selector":"Echo Box","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"ELEMENT":"00000000-0000-04c6-ffff-ffff0000001f","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000001f"}}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000001f","ELEMENT":"00000000-0000-04c6-ffff-ffff0000001f"}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 200 10 ms - 137
+[INFO] - [2025-06-05 19-31-42] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000001f/click {"id":"00000000-0000-04c6-ffff-ffff0000001f"}
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.click() with args: ["00000000-0000-04c6-ffff-ffff0000001f","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element/00000000-0000-04c6-ffff-ffff0000001f/click' to command name 'click'
+[INFO] - [2025-06-05 19-31-42] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element/00000000-0000-04c6-ffff-ffff0000001f/click] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element/00000000-0000-04c6-ffff-ffff0000001f/click] with body: {"element":"00000000-0000-04c6-ffff-ffff0000001f"}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":null}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.click() result: null
+[INFO] - [2025-06-05 19-31-43] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000001f/click 200 899 ms - 14
+[INFO] - [2025-06-05 19-31-43] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"messageInput","using":"accessibility id"}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["accessibility id","messageInput","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"accessibility id","selector":"messageInput","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"ELEMENT":"00000000-0000-04c6-ffff-ffff0000004c","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000004c"}}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000004c","ELEMENT":"00000000-0000-04c6-ffff-ffff0000004c"}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 200 24 ms - 137
+[INFO] - [2025-06-05 19-31-43] - [9691b199][HTTP] --> GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004c/displayed {}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.elementDisplayed() with args: ["00000000-0000-04c6-ffff-ffff0000004c","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element/00000000-0000-04c6-ffff-ffff0000004c/attribute/displayed' to command name 'getAttribute'
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /element/00000000-0000-04c6-ffff-ffff0000004c/attribute/displayed] to [GET http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element/00000000-0000-04c6-ffff-ffff0000004c/attribute/displayed] with no body
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":"true"}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.elementDisplayed() result: true
+[INFO] - [2025-06-05 19-31-43] - [9691b199][HTTP] <-- GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004c/displayed 200 12 ms - 14
+[INFO] - [2025-06-05 19-31-43] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"messageInput","using":"accessibility id"}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["accessibility id","messageInput","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"accessibility id","selector":"messageInput","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"ELEMENT":"00000000-0000-04c6-ffff-ffff0000004c","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000004c"}}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000004c","ELEMENT":"00000000-0000-04c6-ffff-ffff0000004c"}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 200 14 ms - 137
+[INFO] - [2025-06-05 19-31-43] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004c/clear {"id":"00000000-0000-04c6-ffff-ffff0000004c"}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.clear() with args: ["00000000-0000-04c6-ffff-ffff0000004c","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element/00000000-0000-04c6-ffff-ffff0000004c/clear' to command name 'clear'
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element/00000000-0000-04c6-ffff-ffff0000004c/clear] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element/00000000-0000-04c6-ffff-ffff0000004c/clear] with body: {"elementId":"00000000-0000-04c6-ffff-ffff0000004c"}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":null}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.clear() result: null
+[INFO] - [2025-06-05 19-31-43] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004c/clear 200 11 ms - 14
+[INFO] - [2025-06-05 19-31-43] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004c/value {"text":"","value":[],"id":"00000000-0000-04c6-ffff-ffff0000004c"}
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.setValue() with args: [[],"00000000-0000-04c6-ffff-ffff0000004c","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element/00000000-0000-04c6-ffff-ffff0000004c/value' to command name 'setValue'
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Added 'value' property [] to 'setValue' request body
+[INFO] - [2025-06-05 19-31-43] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element/00000000-0000-04c6-ffff-ffff0000004c/value] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element/00000000-0000-04c6-ffff-ffff0000004c/value] with body: {"elementId":"00000000-0000-04c6-ffff-ffff0000004c","text":"","replace":false,"value":[]}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":null,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.execute() result: null
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/execute/sync 200 6119 ms - 14
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","using":"-ios predicate string"}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["-ios predicate string","name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"predicate string","value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'"}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"55000000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000","ELEMENT":"55000000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 120 ms - 137
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed {}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed' to command name 'elementDisplayed'
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/55000000-0000-0000-2444-000000000000/displayed] with no body
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":true,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed 200 47 ms - 65
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","using":"-ios predicate string"}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["-ios predicate string","name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"predicate string","value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'"}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"55000000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000","ELEMENT":"55000000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 90 ms - 137
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/rect {}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/rect' to command name 'getElementRect'
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/rect] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/55000000-0000-0000-2444-000000000000/rect] with no body
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"y":179,"x":0,"width":430,"height":50},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-44] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/rect 200 47 ms - 100
+[INFO] - [2025-06-05 19-31-44] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":null}
+[INFO] - [2025-06-05 19-31-44] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.setValue() result: null
+[INFO] - [2025-06-05 19-31-44] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004c/value 200 1121 ms - 14
+[INFO] - [2025-06-05 19-31-44] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"messageSaveBtn","using":"accessibility id"}
+[INFO] - [2025-06-05 19-31-44] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["accessibility id","messageSaveBtn","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-44] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-44] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-44] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-44] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"accessibility id","selector":"messageSaveBtn","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","using":"-ios predicate string"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["-ios predicate string","name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"predicate string","value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'"}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"ELEMENT":"00000000-0000-04c6-ffff-ffff0000004f","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000004f"}}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000004f","ELEMENT":"00000000-0000-04c6-ffff-ffff0000004f"}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 200 512 ms - 137
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] --> GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004f/displayed {}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.elementDisplayed() with args: ["00000000-0000-04c6-ffff-ffff0000004f","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element/00000000-0000-04c6-ffff-ffff0000004f/attribute/displayed' to command name 'getAttribute'
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /element/00000000-0000-04c6-ffff-ffff0000004f/attribute/displayed] to [GET http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element/00000000-0000-04c6-ffff-ffff0000004f/attribute/displayed] with no body
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":"true"}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.elementDisplayed() result: true
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] <-- GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004f/displayed 200 17 ms - 14
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] --> GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004f/enabled {}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.elementEnabled() with args: ["00000000-0000-04c6-ffff-ffff0000004f","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element/00000000-0000-04c6-ffff-ffff0000004f/attribute/enabled' to command name 'getAttribute'
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /element/00000000-0000-04c6-ffff-ffff0000004f/attribute/enabled] to [GET http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element/00000000-0000-04c6-ffff-ffff0000004f/attribute/enabled] with no body
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"55000000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000","ELEMENT":"55000000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 123 ms - 137
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed {}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed' to command name 'elementDisplayed'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/55000000-0000-0000-2444-000000000000/displayed] with no body
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":"true"}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.elementEnabled() result: true
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] <-- GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004f/enabled 200 9 ms - 14
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"messageSaveBtn","using":"accessibility id"}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["accessibility id","messageSaveBtn","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"accessibility id","selector":"messageSaveBtn","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"ELEMENT":"00000000-0000-04c6-ffff-ffff0000004f","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000004f"}}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000004f","ELEMENT":"00000000-0000-04c6-ffff-ffff0000004f"}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 200 9 ms - 137
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] --> GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004f/displayed {}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.elementDisplayed() with args: ["00000000-0000-04c6-ffff-ffff0000004f","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element/00000000-0000-04c6-ffff-ffff0000004f/attribute/displayed' to command name 'getAttribute'
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [GET /element/00000000-0000-04c6-ffff-ffff0000004f/attribute/displayed] to [GET http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element/00000000-0000-04c6-ffff-ffff0000004f/attribute/displayed] with no body
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":"true"}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.elementDisplayed() result: true
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] <-- GET /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004f/displayed 200 6 ms - 14
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"messageSaveBtn","using":"accessibility id"}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["accessibility id","messageSaveBtn","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"accessibility id","selector":"messageSaveBtn","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"ELEMENT":"00000000-0000-04c6-ffff-ffff0000004f","element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000004f"}}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-04c6-ffff-ffff0000004f","ELEMENT":"00000000-0000-04c6-ffff-ffff0000004f"}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 200 8 ms - 137
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004f/click {"id":"00000000-0000-04c6-ffff-ffff0000004f"}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.click() with args: ["00000000-0000-04c6-ffff-ffff0000004f","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element/00000000-0000-04c6-ffff-ffff0000004f/click' to command name 'click'
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element/00000000-0000-04c6-ffff-ffff0000004f/click] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element/00000000-0000-04c6-ffff-ffff0000004f/click] with body: {"element":"00000000-0000-04c6-ffff-ffff0000004f"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":true,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed 200 52 ms - 65
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","using":"-ios predicate string"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["-ios predicate string","name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"predicate string","value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'"}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 200: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":null}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Responding to client with driver.click() result: null
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element/00000000-0000-04c6-ffff-ffff0000004f/click 200 50 ms - 14
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"new UiSelector().resourceId(\"savedMessage\")","using":"-android uiautomator"}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"savedMessage\")","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"savedMessage\")","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 404: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)\n\tat io.netty.chann...
+[INFO] - [2025-06-05 19-31-45] - [9691b199][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+[INFO] - [2025-06-05 19-31-45] - [9691b199][AndroidUiautomator2Driver@b662] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[INFO] - [2025-06-05 19-31-45] - at AndroidUiautomator2Driver.findElOrEls (/Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+[INFO] - [2025-06-05 19-31-45] - at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[INFO] - [2025-06-05 19-31-45] - at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+[INFO] - [2025-06-05 19-31-45] - at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+[INFO] - [2025-06-05 19-31-45] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 404 35 ms - 826
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"55000000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000","ELEMENT":"55000000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 110 ms - 137
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/rect {}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/rect' to command name 'getElementRect'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/rect] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/55000000-0000-0000-2444-000000000000/rect] with no body
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"y":179,"x":0,"width":430,"height":50},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/rect 200 51 ms - 100
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","using":"-ios predicate string"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["-ios predicate string","name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"predicate string","value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"55000000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000","ELEMENT":"55000000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 102 ms - 137
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed {}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed' to command name 'elementDisplayed'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/55000000-0000-0000-2444-000000000000/displayed] with no body
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":true,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed 200 53 ms - 65
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/enabled {}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/enabled' to command name 'elementEnabled'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/enabled] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/55000000-0000-0000-2444-000000000000/enabled] with no body
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":true,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/enabled 200 54 ms - 65
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","using":"-ios predicate string"}
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["-ios predicate string","name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-45] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"predicate string","value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"55000000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000","ELEMENT":"55000000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 104 ms - 137
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed {}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed' to command name 'elementDisplayed'
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/55000000-0000-0000-2444-000000000000/displayed] with no body
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":true,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/displayed 200 52 ms - 65
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","using":"-ios predicate string"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["-ios predicate string","name ==[c] 'Altostratus' or label ==[c] 'Altostratus'","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"predicate string","value":"name ==[c] 'Altostratus' or label ==[c] 'Altostratus'"}
+[INFO] - [2025-06-05 19-31-46] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"new UiSelector().resourceId(\"savedMessage\")","using":"-android uiautomator"}
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"savedMessage\")","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"savedMessage\")","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 404: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)\n\tat io.netty.chann...
+[INFO] - [2025-06-05 19-31-46] - [9691b199][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[INFO] - [2025-06-05 19-31-46] - at AndroidUiautomator2Driver.findElOrEls (/Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+[INFO] - [2025-06-05 19-31-46] - at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[INFO] - [2025-06-05 19-31-46] - at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+[INFO] - [2025-06-05 19-31-46] - at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+[INFO] - [2025-06-05 19-31-46] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 404 13 ms - 826
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"55000000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"55000000-0000-0000-2444-000000000000","ELEMENT":"55000000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 112 ms - 137
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/click {"id":"55000000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/click' to command name 'click'
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/click] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/55000000-0000-0000-2444-000000000000/click] with body: {"id":"55000000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-46] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"new UiSelector().resourceId(\"savedMessage\")","using":"-android uiautomator"}
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"savedMessage\")","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"savedMessage\")","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 404: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)\n\tat io.netty.chann...
+[INFO] - [2025-06-05 19-31-46] - [9691b199][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+[INFO] - [2025-06-05 19-31-46] - [9691b199][AndroidUiautomator2Driver@b662] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[INFO] - [2025-06-05 19-31-46] - at AndroidUiautomator2Driver.findElOrEls (/Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+[INFO] - [2025-06-05 19-31-46] - at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[INFO] - [2025-06-05 19-31-46] - at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+[INFO] - [2025-06-05 19-31-46] - at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+[INFO] - [2025-06-05 19-31-46] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 404 19 ms - 826
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":null,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/55000000-0000-0000-2444-000000000000/click 200 643 ms - 65
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"**/XCUIElementTypeButton[`label == 'Learn more about Altostratus'`]","using":"-ios class chain"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["-ios class chain","**/XCUIElementTypeButton[`label == 'Learn more about Altostratus'`]","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"class chain","value":"**/XCUIElementTypeButton[`label == 'Learn more about Altostratus'`]"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"47010000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"47010000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"47010000-0000-0000-2444-000000000000","ELEMENT":"47010000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 131 ms - 137
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/displayed {}
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/displayed' to command name 'elementDisplayed'
+[INFO] - [2025-06-05 19-31-46] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/displayed] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/47010000-0000-0000-2444-000000000000/displayed] with no body
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":true,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/displayed 200 56 ms - 65
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/enabled {}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/enabled' to command name 'elementEnabled'
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/enabled] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/47010000-0000-0000-2444-000000000000/enabled] with no body
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":true,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/enabled 200 56 ms - 65
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"**/XCUIElementTypeButton[`label == 'Learn more about Altostratus'`]","using":"-ios class chain"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["-ios class chain","**/XCUIElementTypeButton[`label == 'Learn more about Altostratus'`]","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"class chain","value":"**/XCUIElementTypeButton[`label == 'Learn more about Altostratus'`]"}
+[INFO] - [2025-06-05 19-31-47] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"new UiSelector().resourceId(\"savedMessage\")","using":"-android uiautomator"}
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"savedMessage\")","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"savedMessage\")","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 404: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)\n\tat io.netty.chann...
+[INFO] - [2025-06-05 19-31-47] - [9691b199][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[INFO] - [2025-06-05 19-31-47] - at AndroidUiautomator2Driver.findElOrEls (/Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+[INFO] - [2025-06-05 19-31-47] - at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[INFO] - [2025-06-05 19-31-47] - at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+[INFO] - [2025-06-05 19-31-47] - at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+[INFO] - [2025-06-05 19-31-47] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 404 30 ms - 826
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"47010000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"47010000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"47010000-0000-0000-2444-000000000000","ELEMENT":"47010000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 107 ms - 137
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/displayed {}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/displayed' to command name 'elementDisplayed'
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/displayed] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/47010000-0000-0000-2444-000000000000/displayed] with no body
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":true,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/displayed 200 55 ms - 65
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"**/XCUIElementTypeButton[`label == 'Learn more about Altostratus'`]","using":"-ios class chain"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["-ios class chain","**/XCUIElementTypeButton[`label == 'Learn more about Altostratus'`]","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"class chain","value":"**/XCUIElementTypeButton[`label == 'Learn more about Altostratus'`]"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"47010000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"47010000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"47010000-0000-0000-2444-000000000000","ELEMENT":"47010000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 104 ms - 137
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/click {"id":"47010000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/click' to command name 'click'
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/click] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/47010000-0000-0000-2444-000000000000/click] with body: {"id":"47010000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-47] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"new UiSelector().resourceId(\"savedMessage\")","using":"-android uiautomator"}
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"savedMessage\")","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"savedMessage\")","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 404: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)\n\tat io.netty.chann...
+[INFO] - [2025-06-05 19-31-47] - [9691b199][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+[INFO] - [2025-06-05 19-31-47] - [9691b199][AndroidUiautomator2Driver@b662] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[INFO] - [2025-06-05 19-31-47] - at AndroidUiautomator2Driver.findElOrEls (/Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+[INFO] - [2025-06-05 19-31-47] - at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[INFO] - [2025-06-05 19-31-47] - at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+[INFO] - [2025-06-05 19-31-47] - at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+[INFO] - [2025-06-05 19-31-47] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 404 33 ms - 826
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":null,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/47010000-0000-0000-2444-000000000000/click 200 636 ms - 65
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"//XCUIElementTypeStaticText[@name='Altostratus']/following-sibling::XCUIElementTypeStaticText","using":"xpath"}
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["xpath","//XCUIElementTypeStaticText[@name='Altostratus']/following-sibling::XCUIElementTypeStaticText","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-47] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name='Altostratus']/following-sibling::XCUIElementTypeStaticText"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"68010000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"68010000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"68010000-0000-0000-2444-000000000000","ELEMENT":"68010000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 137 ms - 137
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/displayed {}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/displayed' to command name 'elementDisplayed'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/displayed] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/68010000-0000-0000-2444-000000000000/displayed] with no body
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":true,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/displayed 200 33 ms - 65
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"//XCUIElementTypeStaticText[@name='Altostratus']/following-sibling::XCUIElementTypeStaticText","using":"xpath"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["xpath","//XCUIElementTypeStaticText[@name='Altostratus']/following-sibling::XCUIElementTypeStaticText","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name='Altostratus']/following-sibling::XCUIElementTypeStaticText"}
+[INFO] - [2025-06-05 19-31-48] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"new UiSelector().resourceId(\"savedMessage\")","using":"-android uiautomator"}
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"savedMessage\")","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"savedMessage\")","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 404: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)\n\tat io.netty.chann...
+[INFO] - [2025-06-05 19-31-48] - [9691b199][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[INFO] - [2025-06-05 19-31-48] - at AndroidUiautomator2Driver.findElOrEls (/Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+[INFO] - [2025-06-05 19-31-48] - at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[INFO] - [2025-06-05 19-31-48] - at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+[INFO] - [2025-06-05 19-31-48] - at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+[INFO] - [2025-06-05 19-31-48] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 404 33 ms - 826
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"68010000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"68010000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"68010000-0000-0000-2444-000000000000","ELEMENT":"68010000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 386 ms - 137
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/displayed {}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/displayed' to command name 'elementDisplayed'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/displayed] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/68010000-0000-0000-2444-000000000000/displayed] with no body
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":true,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/displayed 200 30 ms - 65
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"//XCUIElementTypeStaticText[@name='Altostratus']/following-sibling::XCUIElementTypeStaticText","using":"xpath"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["xpath","//XCUIElementTypeStaticText[@name='Altostratus']/following-sibling::XCUIElementTypeStaticText","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name='Altostratus']/following-sibling::XCUIElementTypeStaticText"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"68010000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"68010000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"68010000-0000-0000-2444-000000000000","ELEMENT":"68010000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 118 ms - 137
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/displayed {}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/displayed' to command name 'elementDisplayed'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/displayed] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/68010000-0000-0000-2444-000000000000/displayed] with no body
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":true,"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/displayed 200 30 ms - 65
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] --> POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element {"value":"//XCUIElementTypeStaticText[@name='Altostratus']/following-sibling::XCUIElementTypeStaticText","using":"xpath"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Calling AppiumDriver.findElement() with args: ["xpath","//XCUIElementTypeStaticText[@name='Altostratus']/following-sibling::XCUIElementTypeStaticText","99f7e5fa-4a9e-4124-839d-ba0132b0fb21"]
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Executing command 'findElement'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id, css selector
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element] with body: {"using":"xpath","value":"//XCUIElementTypeStaticText[@name='Altostratus']/following-sibling::XCUIElementTypeStaticText"}
+[INFO] - [2025-06-05 19-31-48] - [9691b199][HTTP] --> POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element {"value":"new UiSelector().resourceId(\"savedMessage\")","using":"-android uiautomator"}
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Calling AppiumDriver.findElement() with args: ["-android uiautomator","new UiSelector().resourceId(\"savedMessage\")","9691b199-3e7b-45bf-8d14-b33ed596a6bf"]
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Waiting up to 0 ms for condition
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Matched '/element' to command name 'findElement'
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Proxying [POST /element] to [POST http://127.0.0.1:8100/session/fc5c6057-9412-4f81-9e0a-73d413fedbd0/element] with body: {"strategy":"-android uiautomator","selector":"new UiSelector().resourceId(\"savedMessage\")","context":"","multiple":false}
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Got response with status 404: {"sessionId":"fc5c6057-9412-4f81-9e0a-73d413fedbd0","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)\n\tat io.netty.chann...
+[INFO] - [2025-06-05 19-31-48] - [9691b199][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+[INFO] - [2025-06-05 19-31-48] - [9691b199][AndroidUiautomator2Driver@b662] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+[INFO] - [2025-06-05 19-31-48] - at AndroidUiautomator2Driver.findElOrEls (/Users/mahmoudfarahat/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+[INFO] - [2025-06-05 19-31-48] - at processTicksAndRejections (node:internal/process/task_queues:105:5)
+[INFO] - [2025-06-05 19-31-48] - at AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+[INFO] - [2025-06-05 19-31-48] - at AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+[INFO] - [2025-06-05 19-31-48] - [9691b199][HTTP] <-- POST /session/9691b199-3e7b-45bf-8d14-b33ed596a6bf/element 404 26 ms - 826
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":{"ELEMENT":"68010000-0000-0000-2444-000000000000","element-6066-11e4-a52e-4f735466cecf":"68010000-0000-0000-2444-000000000000"},"sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"68010000-0000-0000-2444-000000000000","ELEMENT":"68010000-0000-0000-2444-000000000000"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] <-- POST /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element 200 116 ms - 137
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] --> GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/text {}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Driver proxy active, passing request on via HTTP proxy
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Executing command 'proxyReqRes'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Matched '/session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/text' to command name 'getText'
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Proxying [GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/text] to [GET http://127.0.0.1:8200/session/4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0/element/68010000-0000-0000-2444-000000000000/text] with no body
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Got response with status 200: {"value":"This is a mid-level stratiform non-convective cloud","sessionId":"4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0"}
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][XCUITestDriver@5646] Replacing sessionId 4F3B44D6-8085-4EFB-BE2B-C29EEF748BB0 with 99f7e5fa-4a9e-4124-839d-ba0132b0fb21
+[INFO] - [2025-06-05 19-31-48] - [99f7e5fa][HTTP] <-- GET /session/99f7e5fa-4a9e-4124-839d-ba0132b0fb21/element/68010000-0000-0000-2444-000000000000/text 200 27 ms - 114
+[INFO] - [2025-06-05 19-31-48] - Finished test: testCloudList

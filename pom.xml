@@ -4,11 +4,11 @@
     <artifactId>TheApp</artifactId>
     <version>1.0-SNAPSHOT</version>
     <properties>
-        <browserstack.version>1.32.12</browserstack.version>
         <maven.compiler.source>23</maven.compiler.source>
         <maven.compiler.target>23</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <androidSuite>test_runners/AndroidTestSuite.xml</androidSuite>
+        <defaultSuite>test_runners/CrossPlatformTestSuite.xml</defaultSuite>
         <iosSuite>test_runners/IosTestSuite.xml</iosSuite>
         <maven.surefire.plugin.version>3.5.3</maven.surefire.plugin.version>
         <aspectj.version>1.9.24</aspectj.version>
@@ -57,10 +57,16 @@
     </dependencies>
         <profiles>
             <profile>
-                <id>android</id>
+                <id>default</id>
                 <activation>
                     <activeByDefault>true</activeByDefault>
                 </activation>
+                <properties>
+                    <suiteFile>${defaultSuite}</suiteFile>
+                </properties>
+            </profile>
+            <profile>
+                <id>android</id>
                 <properties>
                     <suiteFile>${androidSuite}</suiteFile>
                 </properties>
@@ -81,6 +87,11 @@
                 <version>${maven.surefire.plugin.version}</version>
                 <dependencies>
                     <dependency>
+        <groupId>org.aspectj</groupId>
+        <artifactId>aspectjweaver</artifactId>
+        <version>${aspectj.version}</version>
+    </dependency>
+                    <dependency>
                         <groupId>org.apache.maven.surefire</groupId>
                         <artifactId>surefire-testng</artifactId>
                         <version>${maven.surefire.plugin.version}</version>
@@ -90,8 +101,9 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>${suiteFile}</suiteXmlFile>
                     </suiteXmlFiles>
-                    <argLine>
--javaagent:C:/Users/USER/.m2/repository/com/browserstack/browserstack-java-sdk/1.32.12/browserstack-java-sdk-1.32.12.jar</argLine>
+                    <argLine>                      
+      -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
+                   </argLine>
                 </configuration>
             </plugin>
             <plugin>

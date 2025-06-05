@@ -23,6 +23,7 @@ public class IosDriverFactory implements DriverFactory {
       options.setPlatformVersion(PropertiesUtils.getProperty("platformVersion", "16.0"));
       options.setApp(PropertiesUtils.getProperty("appPath"));
       options.setAutomationName("XCUITest");
+      options.setCapability("wdaLocalPort", PropertiesUtils.getProperty("port", "8200"));
         if ("true".equalsIgnoreCase(System.getProperty("headless"))) {
             options.headless();
         }

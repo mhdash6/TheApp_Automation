@@ -21,10 +21,10 @@ public class AndroidFactory implements DriverFactory{
         options.setDeviceName(PropertiesUtils.getProperty("deviceName", "Android Device"));
         options.setApp(PropertiesUtils.getProperty("appPath"));
         options.setAutomationName("UiAutomator2");
+        options.setCapability("systemPort", PropertiesUtils.getProperty("port", "8100"));
         if ("true".equalsIgnoreCase(System.getProperty("headless"))) {
             options.headless();
         }
-        options.headless();
         return options;
     }
 }
