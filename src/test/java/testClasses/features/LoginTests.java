@@ -17,15 +17,15 @@ import utils.model.LoginTestData;
 @Listeners(DynamicAllureListener.class)
 @Feature("Login Feature")
 public class LoginTests  {
-    String userName;
-    String passWord;
+    String username;
+    String password;
     boolean shouldLogin;
     public String story ;
     public String description ;
 
     public LoginTests(LoginTestData loginTestData) {
-        this.userName = loginTestData.userName();
-        this.passWord = loginTestData.password();
+        this.username = loginTestData.userName();
+        this.password = loginTestData.password();
         this.shouldLogin = loginTestData.shouldLogin();
         this.story = loginTestData.story();
         this.description = loginTestData.description();
@@ -36,11 +36,11 @@ public class LoginTests  {
     public void testLogin() {
        HomeScreen homeScreen = ScreenFactory.getHomeScreen();
        LoginScreen loginScreen= homeScreen.navToLogin();
-       SecretScreen secretScreen= loginScreen.login(userName, passWord);
+       SecretScreen secretScreen= loginScreen.login(username, password);
        AssertionManager.assertEquals(secretScreen.isSecretScreenVisible(),shouldLogin);
          if(shouldLogin) {
               AssertionManager.assertEquals(secretScreen.getLoginMessage(),
-                      "You are logged in as " + userName);
+                      "You are logged in as " + username);
               loginScreen= secretScreen.clickLogoutButton();
               AssertionManager.assertTrue(loginScreen.isInLoginScreen(),
                       "User should be redirected to login screen after logout");
